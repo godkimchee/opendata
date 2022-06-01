@@ -1,0 +1,11 @@
+<p>대전 유성구 관평동 경희가족한의원</p>
+
+{% assign ppages = site.data.meta.staticlist %}
+{% for ppage in ppages %}
+<p><a href="{{ppage.url}}">{{ ppage.title }}</a></p>
+{% endfor %}
+
+{% assign pposts = site.data.meta.postlist | sample: 10 %}
+{% for ppost in pposts %}
+<p><a href="{{ppost.url}}">{{ ppost.title }}</a></p>
+{% endfor %}
