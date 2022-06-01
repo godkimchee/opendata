@@ -14,3 +14,5 @@ Thumbs.db
 .rvmrc
 /vendor
 _posts/generated/
+
+*:Zone.Identifier
