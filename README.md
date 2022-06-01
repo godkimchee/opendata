@@ -12,6 +12,11 @@ ruby _getHiddenPostList.rb
 ruby _buildPosts.rb
 ```
 
+* git push 후 `main` branch에 올라감
+* github actions를 통해 `ruby _buildPosts.rb` 코드가 실행됨
+* github actions를 통해 jekyll build가 수행됨
+* 최종 build 결과가 `gh-pages`에 저장됨
+
 ## TEST
 
 ```
@@ -22,5 +27,5 @@ bundle exe jekyll build --profile --incremental --verbose
 
 ```
 # 1000개 페이지만 
-bundle exe jekyll serve --profile --limit_posts 1000
+bundle exe jekyll serve --profile --limit_posts 2000
 ```
