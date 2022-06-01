@@ -22,5 +22,5 @@ bundle exe jekyll build --profile --incremental --verbose
 
 ```
 # 1000개 페이지만 
-bundle exe jekyll serve --profile --incremental --verbose --limit_posts 1000
+bundle exe jekyll serve --profile --limit_posts 1000
 ```
