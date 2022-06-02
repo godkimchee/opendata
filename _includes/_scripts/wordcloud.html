@@ -1,0 +1,5 @@
+{% assign js_wordcloud = 'vendor/d3/d3.v3.min.js, vendor/d3/d3.layout.cloud.js' | split: ", " %}
+
+{% for wc in js_wordcloud %}
+  <script type="text/javascript" src="{{ site.js | relative_url }}/{{ wc }}?v={{ site.version }}"></script>
+{% endfor %}

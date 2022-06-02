@@ -15,8 +15,39 @@ __{{ page.creator.name }}（{{ page.creator.contactPoint.contactType }}）__ 에
 공개된 데이터는 다음과 같습니다. 
 
 {% for d in page.distribution %}
-* [ {{page.name}}.{{ d.encodingFormat | downcase }} ]({{ d.contentUrl }})
+[ {{page.name}}.{{ d.encodingFormat | downcase }} ]({{ d.contentUrl }})
+
+{% if d.encodingFormat == "MP4" %}
+{% include _media/video.html src=d.contentUrl %}
+{% endif %}
+
+{% if d.encodingFormat == "OGG" %}
+{% include _media/video.html src=d.contentUrl %}
+{% endif %}
+
+{% if d.encodingFormat == "MP3" %}
+{% include _media/audio.html src=d.contentUrl %}
+{% endif %}
+
+{% if d.encodingFormat == "JPG" %}
+{% include _media/image.html src=d.contentUrl alt=page.name %}
+{% endif %}
+
+{% if d.encodingFormat == "JPEG" %}
+{% include _media/image.html src=d.contentUrl alt=page.name %}
+{% endif %}
+
+{% if d.encodingFormat == "PNG" %}
+{% include _media/image.html src=d.contentUrl alt=page.name %}
+{% endif %}
+
+{% if d.encodingFormat == "GIF" %}
+{% include _media/image.html src=d.contentUrl alt=page.name %}
+{% endif %}
+
 {% endfor %}
+
+
 
 ## 알림
 

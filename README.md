@@ -20,12 +20,13 @@ ruby _buildPosts.rb
 ## TEST
 
 ```
+# 100개 페이지만 
+bundle exe jekyll serve --profile --limit_posts 100
+```
+
+```
 # Speed up
 bundle exe jekyll serve --profile --incremental --verbose
 bundle exe jekyll build --profile --incremental --verbose
 ```
 
-```
-# 1000개 페이지만 
-bundle exe jekyll serve --profile --limit_posts 2000
-```
