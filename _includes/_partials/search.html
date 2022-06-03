@@ -6,4 +6,6 @@
   {% include _partials/search/tinysou.html %}
 {% elsif site.local_search.enable %}
   {% include _partials/search/localsearch.html %}
+{% elsif site.google_search.enable %}
+  {% include _partials/search/googlesearch.html %}
 {% endif %}
