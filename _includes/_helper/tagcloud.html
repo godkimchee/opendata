@@ -11,10 +11,13 @@ var words = [
     {% for tag in site.tags %}
     {% assign tagName = tag | first | downcase %} 
     {% assign postsCount = tag | last | size %}
+        {% if postsCount < 2 %}
+            {% continue %}
+        {% endif %}
     {% assign tag_url_encode = tag[0] | url_encode | replace: '+', '%20' %}
     { 
         "text": "{{ tagName }}",
-        "count": "{{ postsCount }}",
+        "count": {{ postsCount }},
         "url": "{{ '/tag/#/' | relative_url | append: tag_url_encode }}" 
     },
     {% endfor %}
@@ -33,7 +36,7 @@ d3.layout.cloud()
   .font("Impact")
   //   .rotate(function() { return (~~(Math.random() * 6) - 3) * 30; })  // default
   //   .rotate(function() { return ~~ (Math.random() * 2) * 90; })
-  .fontSize(function(d) { return Math.sqrt( 16 + d.size ); })  
+  .fontSize(function(d) { return Math.sqrt( d.size ) + 3; })  
   //   .fontSize(function(d) { return Math.log2( 1 + d.size); })  
   //   .fontSize(function(d) { return Math.sqrt(d.size); })  // default
   //   .fontSize(function(d) { return d.size;})
