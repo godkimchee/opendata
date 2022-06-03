@@ -20,7 +20,7 @@ permalink: /:year/:month/:day/:title
 # permalink: pretty
 
 # Pagination
-paginate: 16
+paginate: 25
 #paginate_path: "/page:num/"
 #archive:
 #paginate: 10

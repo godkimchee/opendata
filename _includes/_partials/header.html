@@ -59,6 +59,8 @@
             <a href="javascript:;" class="st-search-show-outputs">
           {% elsif site.local_search.enable or site.algolia_search.enable %}
             <a href="javascript:;" class="popup-trigger">
+          {% elsif site.google_search.enable %}
+            <a href="https://cse.google.com/cse?cx={{ site.google_search.key }}" target="_blank">
           {% endif %}
             {% if site.menu_icons.enable %}
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />

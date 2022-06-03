@@ -36,7 +36,7 @@ d3.layout.cloud()
   .font("Impact")
   //   .rotate(function() { return (~~(Math.random() * 6) - 3) * 30; })  // default
   //   .rotate(function() { return ~~ (Math.random() * 2) * 90; })
-  .fontSize(function(d) { return Math.sqrt( 98 + d.size ) ; })  
+  .fontSize(function(d) { return Math.sqrt( d.size ) * 8 ; })  
   //   .fontSize(function(d) { return Math.log2( 1 + d.size); })  
   //   .fontSize(function(d) { return Math.sqrt(d.size); })  // default
   //   .fontSize(function(d) { return d.size;})
