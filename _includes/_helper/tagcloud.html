@@ -4,8 +4,8 @@
 
 <script>
 var fill = d3.scale.category20();
-var width = 630;
-var height = 960;
+var width = document.getElementById("content").offsetWidth;
+var height = width / 2 * 3;
 
 var words = [
     {% for tag in site.tags %}
