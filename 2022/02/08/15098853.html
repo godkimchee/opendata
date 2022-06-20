@@ -1,0 +1,999 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/opendata/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/opendata/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/opendata/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="코로나19,확진자,사망자,CSV," />
+
+
+
+
+
+  <link rel="alternate" href="/opendata/atom.xml" title="OpenData" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="//godkimchee.github.io/public/img/favicon.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="경상북도 영주시 2020.2월~2021.12월까지 월별 코로나19 확진자 및 사망자에 관한 데이터를 제공합니다">
+<meta name="keywords" content="코로나19, 확진자, 사망자, CSV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="경상북도 영주시｜코로나19 발생현황">
+<meta property="og:url" content="https://godkimchee.github.io/opendata/2022/02/08/15098853">
+<meta property="og:site_name" content="OpenData">
+<meta property="og:description" content="경상북도 영주시 2020.2월~2021.12월까지 월별 코로나19 확진자 및 사망자에 관한 데이터를 제공합니다">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="경상북도 영주시｜코로나19 발생현황">
+<meta name="twitter:description" content="경상북도 영주시 2020.2월~2021.12월까지 월별 코로나19 확진자 및 사망자에 관한 데이터를 제공합니다">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/opendata',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://godkimchee.github.io/opendata"/>
+
+
+
+
+
+  <title>경상북도 영주시｜코로나19 발생현황 | OpenData</title>
+  
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EPQNSYD8NL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EPQNSYD8NL');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/opendata/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">OpenData</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">공개 데이터 소개</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/opendata/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/opendata/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/opendata/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/opendata/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/opendata/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="https://cse.google.com/cse?cx=6cc10e74acf3329aa" target="_blank">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <script async src="https://cse.google.com/cse.js?cx=6cc10e74acf3329aa"></script>
+<div class="gcse-search"></div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            <!-- google adsense -->
+<script async 
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1742502815555726"
+  crossorigin="anonymous">
+</script>
+<!-- google adsense -->
+
+
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://godkimchee.github.io/opendata/2022/02/08/15098853">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Big Foot">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OpenData">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            경상북도 영주시｜코로나19 발생현황
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-02-08T00:00:00+00:00">
+                2022-02-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/opendata/category/#/%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84" itemprop="url" rel="index">
+                    <span itemprop="name">경상북도</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/opendata/category/#/%EC%98%81%EC%A3%BC%EC%8B%9C" itemprop="url" rel="index">
+                    <span itemprop="name">영주시</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    경상북도 영주시 2020.2월~2021.12월까지 월별 코로나19 확진자 및 사망자에 관한 데이터를 제공합니다
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+<!-- 수평1 -->
+<!-- google adsense 001 ▽▽▽ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1742502815555726"
+     data-ad-slot="5078693360"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- google adsense 001 △△△ -->
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="개요">개요</h2>
+
+<p><strong>경상북도 영주시（영주시보건소 건강관리과）</strong> 에서 공개한 데이터입니다.</p>
+
+<p>2022-02-08에 만들어져 2022-02-08에 공개 되었고, 최근 2022-02-08에 수정되었습니다.</p>
+
+<h2 id="내용">내용</h2>
+
+<p>다음과 같은 데이터를 제공하고 있습니다.</p>
+
+<blockquote>
+  <p>경상북도 영주시 2020.2월~2021.12월까지 월별 코로나19 확진자 및 사망자에 관한 데이터를 제공합니다</p>
+</blockquote>
+
+<h2 id="공개-데이터">공개 데이터</h2>
+
+<p>공개된 데이터는 다음과 같습니다.</p>
+
+<p><a href="https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002510027&amp;fileDetailSn=1&amp;insertDataPrcus=N"> 경상북도 영주시_코로나19 발생현황.csv </a></p>
+
+<h2 id="알림">알림</h2>
+
+<p>위 내용은 <a href="https://www.data.go.kr">공공데이터포털</a>에서 인용하였습니다. 더 자세한 정보와 데이터는 공공데이터 포털 <a href="https://www.data.go.kr/data/15098853/fileData.do">해당 페이지</a>에서 얻을 수 있습니다.</p>
+
+
+
+      
+    </div>
+
+    <div id="pagerank">
+      <p>대전 유성구 관평동 경희가족한의원</p>
+
+
+
+<p><a href="https://khfamily.modoo.at">경희가족한의원</a></p>
+
+<p><a href="https://m.place.naver.com/hospital/1422924794">경희가족한의원 네이버 플레이스</a></p>
+
+
+
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=222409662266">[관평동 한의원] &quot;아이 밥 먹는 양이 늘었어요&quot; (관평동 소아한의원 보약한약)</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221403966766">초겨울 감기 잡는 지압법 / 관평동 경희가족한의원</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221196233271">발바닥 통증 족저근막염, 발뒤꿈치통증 / 대전 테크노 관평동 경희가족한의원</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=222693271590">[관평동 한의원] 수족다한 한약치료</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221541926779">몸이 많이 피로한데 한약이 도움이 될까요 / 관평동 경희가족한의원</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221583867896">[관평동 침치료 한의원] 만성통증(디스크,협착증,관절통)에서 침치료는 안전하고 효과가 좋습니다 / 관평동 경희가족한의원</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=222392954780">[관평동 다이어트 한의원]  &quot;먹으면서 다이어트가 되니 신기했다&quot; (관평동 다이어트 한약)</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221860230932">[관평동 다이어트 한의원] 일상생활을 하면서 건강한 다이어트 (다이어트 한약)</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221196828627">대전 테크노 관평동 요통 치료 한의원 / 경희가족한의원</a></p>
+
+<p><a href="https://blog.naver.com/PostView.naver?blogId=khfamilylove&logNo=221353280967">굶는 다이어트 안돼, 기초대사량 높이는 게 관건 / 관평동 다이어트 한의원 경희가족한의원</a></p>
+
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/opendata/tag/#/%EC%BD%94%EB%A1%9C%EB%82%9819" rel="tag"># 코로나19</a>
+          
+            
+            <a href="/opendata/tag/#/%ED%99%95%EC%A7%84%EC%9E%90" rel="tag"># 확진자</a>
+          
+            
+            <a href="/opendata/tag/#/%EC%82%AC%EB%A7%9D%EC%9E%90" rel="tag"># 사망자</a>
+          
+            
+            <a href="/opendata/tag/#/CSV" rel="tag"># CSV</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/opendata/2022/02/08/15098856" rel="next" title="부산광역시 부산진구｜코로나19 확진자 및 사망자 현황">
+                <i class="fa fa-chevron-left"></i> 부산광역시 부산진구｜코로나19 확진자 및 사망자 현황
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/opendata/2022/02/08/15098852" rel="prev" title="충청남도 예산군｜코로나19 확진자 및 사망자 수">
+                충청남도 예산군｜코로나19 확진자 및 사망자 수 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+<!-- 사각1 -->
+<!-- google adsense 002 ▽▽▽ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1742502815555726"
+     data-ad-slot="2929637204"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- google adsense 002 △△△ -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/opendata/assets/images/avatar.gif"
+               alt="Big Foot" />
+          <p class="site-author-name" itemprop="name">Big Foot</p>
+           
+              <p class="site-description motion-element" itemprop="description">대한민국, 공개, 데이터</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/opendata/archives/">
+                <span class="site-state-item-count">10000</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/opendata/categories/">
+                <span class="site-state-item-count">573</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/opendata/tags/">
+                <span class="site-state-item-count">12329</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/opendata/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#개요"> <span class="nav-number">1</span> <span class="nav-text">개요</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#내용"> <span class="nav-number">2</span> <span class="nav-text">내용</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#공개-데이터"> <span class="nav-number">3</span> <span class="nav-text">공개 데이터</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#알림"> <span class="nav-number">4</span> <span class="nav-text">알림</span> </a> </li>
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy;  2018 - 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Big Foot</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/opendata/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/opendata/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/opendata/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/opendata/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/opendata/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/opendata/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/opendata/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/opendata/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/opendata/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/opendata/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/opendata/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+

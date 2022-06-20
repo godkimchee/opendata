@@ -1,0 +1,1 @@
+Sitemap: https://godkimchee.github.io/opendata/sitemap.xml
